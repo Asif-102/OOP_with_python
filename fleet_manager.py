@@ -41,3 +41,5 @@ class Counter:
 num = 55
 name = 'Ena'
 rashed = Passenger('Rashed', '01717', 'khulna')
+
+print(rashed)

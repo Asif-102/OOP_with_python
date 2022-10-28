@@ -1,4 +1,5 @@
 class Item:
+    pay_rate = 0.8 # The pay rate after 20% discount
     def __init__(self, name: str, price: float, quantity=0):
         # Run validations to the received arguments
         assert price >= 0, f"Price {price} is not greater than or equal to zero!"
@@ -13,7 +14,8 @@ class Item:
         return self.price * self.quantity
 
 
-item1 = Item("Phone", -100, 1)
+item1 = Item("Phone", 100, 1)
 item2 = Item("Laptop", 1000, 3)
 
-print(item1.calculate_total_price())
+print(Item.__dict__) # All the attributes for Class level
+print(item1.__dict__) # All the attributes for instance level

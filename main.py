@@ -26,7 +26,10 @@ item3 = Item("Cable", 10, 5)
 item4 = Item("Mouse", 50, 5)
 item5 = Item("Laptop", 75, 5)
 
-print(Item.all)
+# print(Item.all)
+
+for instance in Item.all:
+    print(instance.name)
 
 # print(Item.__dict__) # All the attributes for Class level
 # print(item1.__dict__) # All the attributes for instance level
